@@ -32,15 +32,17 @@ if __name__ == "__main__":
 		else:
 			print('Triangulo e invalido.\n')
 
-		continuar = ''
-		while continuar != 'sim' and continuar != 'nao':
+		while True:
 			continuar = input('Deseja checar mais um triangulo? Responda sim ou nao.\n')
 			if continuar == 'sim':
 				executar = True
+				break
 			elif continuar == 'nao':
 				executar = False
 				print('Terminando o programa...')
+				break
 			else:
 				print('Comando invalido.')
+				continue
 
 	
